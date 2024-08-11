@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /> 
+    <title>Pop Up</title>
+    <style>
+        body {
+            background-color: rgb(201, 173, 227);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .boxes {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-wrap: wrap;
+        }
+        .box1 {
+            border: rgb(80, 11, 80) 2px double;
+            width: 250px;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+            border-radius: 15px;
+            box-shadow: rgb(133, 33, 133) 5px 5px 5px;
+        }
+        h1 {
+            position: relative;
+            top: 150px;
+        }
+        img {
+            height: 235px;
+            width: 235px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        #close {
+            float: right;
+        }
+        .popup {
+            padding: 15px;
+            display: none; 
+            border-radius: 26px; 
+            text-align: center; 
+            transition: all 0.5s ease; 
+            transition-duration: 1s; 
+            position: absolute;
+            bottom: 36%;
+            right: 36%;
+            width: 400px;
+            background-color: aliceblue;
+            border: 2px solid
+        }
+    </style>
+</head>
+<body>
+    <h1>Water Falls</h1>
+    <div class="boxes" id="totalboxes">
+        <div id="wf1" class="box1">
+            <img src="waterfall1.jpg" alt="Ethipothala Waterfalls">
+        </div>
+        <div  id="wf2" class="box1">
+            <img src="waterfall2.jpg" alt="Mallela Theertham Waterfalls">
+        </div>
+        <div id="wf3" class="box1">
+            <img src="waterfall3.jpg" alt="Bheemuni Paadam Waterfalls">
+        </div>
+        <div id="wf4" class="box1">
+            <img src="waterfall4.jpg" alt="Gayathri Waterfalls">
+        </div>
+    </div>  
+    <div id="parent">
+        <div class="popup" id="popup1">
+            <i class="fa fa-window-close" aria-hidden="true" id="close"></i>
+            <p id="text">A 70-feet high gorgeous beauty, located in the Guntur district in Andhra Pradesh, Ethipothala Waterfalls fall into a lagoon as three streams combine to create this beautiful tourist spot. <br>
+            <b>Best Time to Visit:</b> Winter (October - March) <br>
+            <b>Distance from Hyderabad:</b> 163.4 km</p>
+        </div> 
+        <div class="popup" id="popup2">
+            <i class="fa fa-window-close" aria-hidden="true" id="close"></i>
+            <p id="text">Visiting the Mallela Theertham Waterfalls near Hyderabad during monsoon or post-monsoon months is indeed a mesmerising experience. Located in the Nallamala Forest in Nagarkurnool, Telangana, India, these waterfalls trace their origin to the River Krishna which flows through the forest. <br>
+            <b>Season:</b> October- February<br>
+            <b>Distance from Hyderabad:</b> 185 km <br>
+            <b>Timings:</b> 8:00 AM to 5:00 PM </p>
+        </div> 
+        <div class="popup" id="popup3">
+            <i class="fa fa-window-close" aria-hidden="true" id="close"></i>
+            <p id="text">To see the Bheemuni Paadam Waterfalls at their gushiest and whitest, visit this place during the rainy season. The Waterfalls flow through a rock which appears to be an impression of the legendary hero Bheema's footprint, hence, the name Bheemuni Paadam. <br>
+            <b>Distance from Hyderabad:</b> 204.1 km</p>
+        </div> 
+        <div class="popup" id="popup4">
+            <i class="fa fa-window-close" aria-hidden="true" id="close"></i>
+            <p id="text">With nature's generosity for the areas nearby Hyderabad, Gayatri Waterfalls which is locally known as Gadidha Gundam or Mukti Gundam is a hidden gem. Located in a faraway spot amidst the dense forest near Tarnam Khurd, this place is a heavenly retreat if someone needs some time off from the urban chaos.<br>
+            <b>Best Time to Visit:</b> August- October <br>
+            <b>Distance from Hyderabad:</b> 204.1 km</p>
+        </div> 
+    </div>
+    <script src="script.js"></script> 
+</body>
+</html>
